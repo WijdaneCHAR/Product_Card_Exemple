@@ -1,0 +1,221 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 100%;
+    }
+
+  
+
+    .shoes, .t-shirt{
+        margin: 20px;
+        box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 20%);
+        border: 1px solid rgb(90, 90, 90,0.8);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .shoes .image,
+    .t-shirt .image{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .text{
+        display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    }
+
+    .shoes .image img,
+    .t-shirt .image img{
+        height: 100%;
+        width: 70%;
+        margin-top: -25px;
+    }
+    .shoes .infos,
+    .t-shirt .infos{
+        height:240px;
+        background-color:#89dfd8;
+        border-radius: 0px 100px 0px 0px;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .text span{
+        margin-right: 4px;
+        height: 20px;
+        width: 38px;
+        border: 1px solid #333;
+        text-align: center;
+        cursor: pointer;
+    }
+    .text span:hover{
+        border: 2px solid rgb(56, 55, 55);
+        height: 22px;
+        width:40px;
+    }
+    .couleurs{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .couleurs span{
+        margin-right: 5px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .couleurs span:hover{
+        border: 2px solid rgb(56, 55, 55);
+        height: 22px;
+        width:22px;
+    }
+    .shoes .couleurs .span1{
+        background-color:#39CFC7;
+    }
+    .shoes .couleurs .span3{
+        background-color: #1D1D1F;
+    }
+    .t-shirt .couleurs .span1{
+        background-color: #F7C74A;
+    }
+    .t-shirt .couleurs .span2{
+        background-color: #497246;
+    }
+    .t-shirt .couleurs .span3{
+        background-color: #0282C3;
+    }
+    .t-shirt .couleurs .span4{
+        background-color: #1C2135;
+    }
+
+    @media (min-width:426px) {
+        .content{
+            flex-direction: row;
+        }
+        .shoes,.t-shirt{
+            width: 100%;
+        }
+        .shoes .infos,.t-shirt .infos{
+            height: 100%;
+        }
+    }
+    h3{
+        text-align: start;
+        color: #f7f3f3;
+        font-weight: 700;
+        width: 70%;
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .description{
+        text-align: start;
+        width: 80%;
+        padding-top: 7px;
+        padding-left: 5px;
+        color: rgb(60, 58, 58,0.5);
+        font-size: 13px;
+    }
+    .price{
+        color: #f7f3f3;
+        font-size: 25px;
+    }
+    .buy{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 10%;
+    }
+    .buy i{
+        padding:10px;
+    }
+    .buy button{
+        border-radius: 30px;
+        padding-right: 7px;
+        background-color: #333;
+        color: #f7f3f3;
+        cursor: pointer;
+    }
+    .buy button:hover{
+        padding-top:3px;
+        padding-bottom: 3px;
+    }
+    #heart{
+        margin-left: 20px;
+    }
+    #heart:hover{
+        cursor: pointer;
+        color: #f1f1f1;
+        background-color: #333;
+        border-radius: 50%;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Responsive: */
+    @media (max-width:750px){
+        .shoes .image,
+    .t-shirt .image{
+        width: 100%;
+        height:100%;
+        position: relative;
+        overflow-x: scroll;
+        overflow-y:hidden ;
+        scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+        height: 8px ;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+    }
